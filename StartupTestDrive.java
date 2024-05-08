@@ -1,6 +1,6 @@
-public class SimpleStartupTestDrive {
+public class StartupTestDrive {
     public static void main(String[] args) {
-        SimpleStartup dot = new SimpleStartup();
+        Startup dot = new Startup();
         int[] locations = {2, 3, 4};
         dot.setLocationCells(locations);
         int userGuess = 2;
