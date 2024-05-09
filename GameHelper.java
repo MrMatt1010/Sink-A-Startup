@@ -43,7 +43,7 @@
             }                                                                   //end loop
         }                                                                       //end while
         savePositionToGrid(startupCoords);                                      //coords passed checks, save
-        ArrayList<String> alphaCells = convertCoordsToAlphaFormat(startupCoords)
+        ArrayList<String> alphaCells = convertCoordsToAlphaFormat(startupCoords);
                 //System.out.println("placed at: " + alphaCells);
             return alphaCells;
         }//end placeStartup
@@ -59,7 +59,7 @@
         }//end startupFits
         private boolean coordsAvailable(int[] startupCoords){
             for (int coord : startupCoords){
-                if (grid[coord] ! = 0){
+                if (grid[coord] != 0){
                     //System.out.println("position: " + coord + " already taken.");
                     return false; //no success
                 }
@@ -81,7 +81,7 @@
         }//end convertCoordsToAlphaFormat
         private String getAlphaCoordsFromIndex(int index){
             int row = calcRowFromIndex(index);                      //get row value
-            int colum = index % GRID_LENGTH;                        //get numeric column value
+            int column = index % GRID_LENGTH;                        //get numeric column value
             String letter = ALPHABET.substring(column, column + 1);
             return letter + row;
         }//end getAlphaCoordsFromIndex
